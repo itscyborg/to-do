@@ -9,10 +9,16 @@ const todoSlice =createSlice({
     },
     cleartext:(state)=>{
       return  '';
+    },
+    GETALL_TODO:(state,action)=>{
+      return  {
+        ...state,
+        todos: action.payload,
+      };
     }
      
   }
 })
 
-export const {addTodo,cleartext}=todoSlice.actions;
+export const {addTodo,cleartext,GETALL_TODO}=todoSlice.actions;
 export default todoSlice.reducer;

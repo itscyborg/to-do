@@ -2,7 +2,7 @@ import React from "react";
 import {useDispatch, useSelector} from 'react-redux'
 import { addTodo, cleartext } from "../redux/todoSlice";
 
-import { addNewTodo } from "../redux/actions";
+import { addNewTodo } from "../redux/actions/index.js";
 const TodoForm = () => {
   // const [text, setText] = useState("");
 
